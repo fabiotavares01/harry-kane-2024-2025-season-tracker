@@ -2,7 +2,7 @@
 
 Tracking Harry Kane's performance across club and international football in the 2024/2025 season, built on a live-sourced relational data pipeline.
 
-![Dashboard preview](assets/dashboard-preview.png)
+![Dashboard preview](assets/DashboarD.png)
 
 <!-- [![Power BI Dashboard](https://img.shields.io/badge/Power%20BI-View%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](YOUR_DASHBOARD_LINK_HERE) -->
 
