@@ -990,7 +990,7 @@ The dashboard includes:
 - **A summary table** breaking down stats by competition
 - **Competition and date range slicers**, filtering across all visuals
 
-![Dashboard overview](assets/dashboard-full.png)
+![Dashboard overview](assets/Dashboard.png)
 
 ---
 
