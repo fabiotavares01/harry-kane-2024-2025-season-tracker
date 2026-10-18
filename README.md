@@ -969,16 +969,16 @@ To display both home and away team logos in the same visual, I duplicated the `t
 
 | Measure | Description |
 |---|---|
-| `G/A` | Combines goals and assists |
+| `% Played` | Matches played expressed as a percentage of total matches |
 | `Cumulative G/A` | Running sum of G/A across the season, used to show form and progression |
+| `G/A` | Combines goals and assists |
 | `G/A Per 90` | Normalizes goal involvement by playing time |
+| `Matches Missed` | Gap between total possible matches and matches actually played |
+| `Matches Played` | Count of distinct matches Kane actually appeared in |
+| `Match Status` | Flags whether Kane featured in a given match, based on whether a stats row exists — used for conditional formatting on the match table |
 | `Shot Accuracy` | Percentage of total shots that were on target |
 | `Shot Conversion` | Percentage of total shots that resulted in a goal |
-| `Match Status` | Flags whether Kane featured in a given match, based on whether a stats row exists — used for conditional formatting on the match table |
-| `Matches Played` | Count of distinct matches Kane actually appeared in |
 | `Total Matches` | Count of total matches available — every team fixture for club competitions, or every match Kane was called up for internationally |
-| `Matches Missed` | Gap between total possible matches and matches actually played |
-| `% Played` | Matches played expressed as a percentage of total matches |
 
 ### Visuals
 
