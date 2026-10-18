@@ -1012,7 +1012,6 @@ He didn't have many cards, with only **7 yellow cards** and **0 red cards** in t
 
 In terms of his performance for the England national team, the international calendar meant far fewer matches than at club level, but he still contributed **4 goals** across those appearances (3 in the UEFA Nations League, 1 in Friendlies), with 0 assists, from 5 Nations League and 2 Friendlies matches.
 
-> **Note:** DFB-Pokal figures above should be re-verified after the `pull_dfb_pokal.py` fix (`LEAGUE_ID` corrected to `81`) is re-run.
 
 ---
 
