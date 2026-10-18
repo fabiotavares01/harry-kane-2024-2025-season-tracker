@@ -16,7 +16,6 @@ Tracking Harry Kane's performance across club and international football in the 
 - [Dashboard](#dashboard)
 - [Key Findings](#key-findings)
 - [Limitations](#limitations)
-- [Limitations](#limitations)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [How to Run](#how-to-run)
