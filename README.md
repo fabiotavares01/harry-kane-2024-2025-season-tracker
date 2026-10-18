@@ -992,6 +992,7 @@ The dashboard includes:
 - **A detailed match-by-match table** with competition, date, home and away teams with their logos, match result, and Harry Kane's stats for each match
 - **A summary table** breaking down stats by competition
 - **Competition and date range slicers**, filtering across all visuals
+- **A Reset Filter Button** to reset any filter applied
 
 ![Dashboard overview](assets/Dashboard.png)
 
