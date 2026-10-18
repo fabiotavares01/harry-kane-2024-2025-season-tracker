@@ -17,6 +17,11 @@ Tracking Harry Kane's performance across club and international football in the 
 - [Dashboard](#dashboard)
 - [Key Findings](#key-findings)
 - [Limitations](#limitations)
+- [Limitations](#limitations)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [How to Run](#how-to-run)
+- [Author](#author)
 
 ---
 
@@ -1028,3 +1033,63 @@ The `continent` column in the `teams` table relies on a manually built mapping d
 The squad-presence logic used for international matches, where a match is only inserted if Harry Kane appears in that fixture's player list, depends entirely on API-Football's own data being complete and accurate. If the API has incomplete squad data for a given match, that match could be missed or misrepresented in this dataset.
 
 Finally, this project was built and populated specifically for Harry Kane. While the schema is structured to support any player, extending it to track others would require running the pipeline again for each additional player.
+ 
+---
+ 
+## Tech Stack
+ 
+**API-Football:** I used it as the data source, pulling fixture, team, and player statistics data via its REST API.
+ 
+**Python:** I used it to query the API, handle rate-limiting, and load the data into PostgreSQL, using the `requests` and `psycopg2` libraries.
+ 
+**PostgreSQL (Neon):** I used it to store the data in a normalized relational schema, hosted on a cloud-managed Postgres instance.
+ 
+**Power BI:** I used it to build the dashboard, create DAX measures, and do light data cleaning via Power Query, including the home/away team logo relationship setup.
+ 
+---
+ 
+## Project Structure
+ 
+```
+harry-kane-tracker/
+│
+├── README.md
+├── sql/
+│   ├── create_tables.sql
+│   └── data_quality_checks.sql
+├── python/
+│   ├── lookup_ids.py
+│   ├── seed_reference_data.py
+│   ├── pull_bundesliga.py
+│   ├── pull_champions_league.py
+│   ├── pull_dfb_pokal.py
+│   ├── pull_international.py
+│   ├── backfill_country.py
+│   ├── update_images.py
+│   └── add_continent.py
+└── assets/
+    └── dashboard_screenshot.png
+```
+ 
+---
+ 
+## How to Run
+ 
+1. Create a free account at [API-Football](https://www.api-football.com) and get your API key.
+2. Create a PostgreSQL database (this project uses [Neon](https://neon.com)) and get your connection string.
+3. Create a `.env` file with your `API_FOOTBALL_KEY` and `NEON_CONNECTION_STRING`.
+4. Run the SQL code from `sql/create_tables.sql` to create the database schema.
+5. Run `python/lookup_ids.py` to confirm IDs (optional — IDs for this project are already hardcoded in the scripts).
+6. Run `python/seed_reference_data.py` to seed core reference data.
+7. Run each pull script in `python/` to populate matches and player stats: `pull_bundesliga.py`, `pull_champions_league.py`, `pull_dfb_pokal.py`, `pull_international.py`.
+8. Run the cleaning scripts: `backfill_country.py`, `update_images.py`, `add_continent.py`.
+9. Run the queries in `sql/data_quality_checks.sql` to verify the data.
+10. Connect Power BI to your PostgreSQL database and build or open the report.
+You can also view the dashboard directly on Power BI: <!-- **[View Dashboard — Power BI link here]** -->
+ 
+---
+ 
+## Author
+ 
+Fábio Tavares | 2026
+ 
