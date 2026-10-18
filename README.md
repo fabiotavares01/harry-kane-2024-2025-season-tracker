@@ -4,8 +4,7 @@ Tracking Harry Kane's performance across club and international football in the 
 
 ![Dashboard preview](assets/Dashboard.png)
 
-<!-- [![Power BI Dashboard](https://img.shields.io/badge/Power%20BI-View%20Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](YOUR_DASHBOARD_LINK_HERE) -->
-
+[![View Dashboard](https://img.shields.io/badge/View%20Dashboard-Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/groups/me/reports/a2116033-de72-4113-8641-c91c3ec50c26?ctid=a6c348d1-c407-43cb-b532-13fe5b3b952d&pbi_source=linkShare)
 ---
 
 ## Table of Contents
@@ -1085,8 +1084,7 @@ harry-kane-tracker/
 8. Run the cleaning scripts: `backfill_country.py`, `update_images.py`, `add_continent.py`.
 9. Run the queries in `sql/data_quality_checks.sql` to verify the data.
 10. Connect Power BI to your PostgreSQL database and build or open the report.
-You can also view the dashboard directly on Power BI: <!-- **[View Dashboard — Power BI link here]** -->
- 
+[![View Dashboard](https://img.shields.io/badge/View%20Dashboard-Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://app.powerbi.com/groups/me/reports/a2116033-de72-4113-8641-c91c3ec50c26?ctid=a6c348d1-c407-43cb-b532-13fe5b3b952d&pbi_source=linkShare)
 ---
  
 ## Author
