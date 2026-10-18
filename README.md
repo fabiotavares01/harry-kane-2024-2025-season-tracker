@@ -984,7 +984,7 @@ To display both home and away team logos in the same visual, I duplicated the `t
 
 The dashboard includes:
 
-- **Five KPI cards:** AMR (average match rating), G/A, G/A Per 90, Total Shots, Total Shots on Target
+- **Five KPI cards:** AMR (average match rating), G/A, G/A Per 90, Total Shots and Total Shots on Target
 - **Two gauge visuals** showing Kane's Shot Accuracy and Shot Conversion
 - **Two donut charts:** "Goals by Competition" and "Assists by Competition," showing Harry Kane's performance by each competition
 - **A stacked bar chart:** "Matches Played Vs. Matches Missed by Competition," comparing matches played to matches missed and total matches between competitions, with % Played available on hover via tooltip
